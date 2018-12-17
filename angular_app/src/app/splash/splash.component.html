@@ -1,0 +1,89 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<div data-parallax="scroll">
+  <div data-relative-input="true" id="scene">
+    <div data-depth="1.0"><img id= "center_pic" src="assets/imgs/music-left.png"></div>
+  </div>
+  <hr />
+</div>
+<div data-parallax="scroll">
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Music Lyric Generator</h1>
+    <p class="lead">Create new and unique song lyrics based on your favorite artists. Made with textgenrnn and keras as a part of CS322 Maynooth University
+      Music Programming Module
+    </p>
+    <hr class="my-4">
+    <p>Utilises a recurrent neural network to and trains on 100000+ samples of an artists corpus of lyrics.</p>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Choose an artist</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://befunkycartoonizer.s3.amazonaws.com/C4882588-1544369365398436large.jpg" class="splash-imgs">
+        <mat-card-content>
+          <p>
+            Choose from a catalog of pre train artists models to generate lyrics for.
+            Theses have been selected to showcase a broad range of lyrical structures and music genres.
+
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button routerLink = "/generate">Choose</button>
+          <!-- <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-sm">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Generate new lyrics</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://images.pexels.com/photos/1210530/pexels-photo-1210530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="splash-imgs">
+        <mat-card-content>
+          <p>
+          Jump and let the model generate a new set of lyrics. You have the option of automatically doing
+           this or you can have the choice of input a sample of lyrics to act as a seed for the generateion.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button routerLink = "/generate" >Generate</button>
+          <!-- <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="col-sm">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Play new music</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://images.pexels.com/photos/21022/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="splash-imgs">
+        <mat-card-content>
+          <p>
+            Though Google's text to speech API we are able to bring the music to life. Click play and hear the new creation of lyrics that have been generated through the web interface.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button routerLink = "/generate" >Play</button>
+          <!-- <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<hr/>
+<div class="">
+  <button class="btn" routerLink = "/generate" mat-raised-button>Get Started</button>
+</div>
+
+<br/>

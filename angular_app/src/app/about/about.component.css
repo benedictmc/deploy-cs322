@@ -1,0 +1,22 @@
+.card{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+.about{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.example-card {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwinh-Pkm6LfAhVcQxUIHVFZBScQjRx6BAgBEAU&url=https%3A%2F%2Factiv.kz%2Fen%2Fservice%2Fmusic&psig=AOvVaw1bJBJurj4V_ncI4rdbLJdi&ust=1544976399461760');
+    background-size: cover;
+  }

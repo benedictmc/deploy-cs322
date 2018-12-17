@@ -1,0 +1,156 @@
+  .artistschoice{
+     text-align:center;
+     outline: none;
+     border-bottom: 1px solid #c0c0c0;
+
+    }
+    .own_lyrics{
+      display:                 flex;
+      display:                 -webkit-flex; /* Safari 8 */
+      flex-wrap:               wrap;
+      -webkit-flex-wrap:       wrap;         /* Safari 8 */
+      justify-content:         center;
+      -webkit-justify-content: center;  
+
+    }
+    .own_lyrics_input{
+      position: center;
+      width: 600px;
+    }
+    .example-radio-group {
+        display: inline-flex;
+        flex-direction: column;
+      }
+
+    .example-radio-button {
+    margin: 5px;
+    }
+
+    .example-selected-value {
+    margin: 15px 0;
+    }
+    .button{
+
+    }
+
+
+    .btn-group button {
+
+    }
+
+    .btn-group:after {
+
+
+    }
+
+    .btn-group button:not(:last-child) {
+    }
+
+    .btn-group button:hover {
+        background-color: red;
+    }
+
+
+    #GB{
+
+    }
+    #text{
+     padding: 15px 660px;
+    }
+
+
+.progress{
+    height: 10%;
+    text-align: center
+}
+pre{
+    font-family: "courier new", courier, monospace;
+    font-size: 15px;
+    text-align: center;
+}
+.artist-list{
+text-decoration:none;
+color:#2a2b2d;
+font-size: 30px;
+}
+.radio-inline{
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.button {
+    backface-visibility: hidden;
+    display: inline-block;
+    cursor: pointer;
+    background: #337ab7;
+    border-radius: 5px;
+    border: 0px solid #444444;
+    border-width: 0px 0px 0px 0px;
+    padding: 10px 24px 10px 24px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: 100;
+    font-style: normal;
+    position: absolute;
+    left: 45%;
+
+}
+
+.playbutton{
+    backface-visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    background: #337ab7;
+    border-radius: 5px;
+    border: 0px solid #444444;
+    border-width: 0px 0px 0px 0px;
+    padding: 12px 28px 12px 28px;
+      color: #ffffff;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: 100;
+    font-style: normal;
+    left:43%;
+    }
+
+
+.form-control{
+  width:600px;
+
+}
+
+.artists{
+display: inline-block;
+width: 280px;
+height: 280px;
+padding:15px;
+}
+/* HIDE RADIO */
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=checkbox]:checked + img {
+  outline: 4px solid #8e2da1;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+.main{
+  padding-left:100px;
+  padding-right: 100px;
+  outline: none;
+  border:0px;
+}

@@ -1,0 +1,48 @@
+<div *ngIf = "list">
+  <div class="artistschoice">
+    <h1><b>Pick an artist</b></h1>
+    <label><input type = "radio" name = "artists"  value = "Arctic Monkeys" (click)= "changeArtist('Arctic Monkeys', $event)"><img src="https://mojo20music.files.wordpress.com/2017/09/arctic-monkeys-widescreen.jpg?w=2400&h=1800&crop=1" class="artists"></label>
+    <label><input type = "radio" name = "artists"  value = "kanye west" (click)= "changeArtist('Kanye West', $event)"><img src="https://media.wmagazine.com/photos/57cf162f3c7545af0b0d6730/master/pass/1316.w.MS.royals.image3.jpg" class="artists"></label>
+    <label><input type = "radio" name = "artists"  value = "the beatles" (click)= "changeArtist('The Beatles', $event)"><img src="https://i.pinimg.com/originals/03/2f/d9/032fd9196ea52ca8046d2a259c0092fd.jpg" class="artists"></label>
+    <label><input type = "radio" name = "artists"  value = "taylor swift" (click)= "changeArtist('Taylor Swift', $event, kanye)"><img src="https://vignette.wikia.nocookie.net/taylor-swift/images/c/ca/CfKA1lZUsAEoIHM.jpg/revision/latest?cb=20180422123124" class="artists"></label>
+  </div>
+  <br>
+
+  <div class="own_lyrics">
+    <h3>Create lyrics for your selected artist <b>{{artistFocus}}</b></h3>
+    <br>
+  </div>
+
+  <div *ngIf="loaded == 'loading'">
+    <div class="progress">
+      <mat-spinner style="margin:0 auto;" mode="indeterminate"></mat-spinner>
+    </div>
+  </div>
+  <br>
+
+  <!-- Generate Button -->
+  <div *ngIf="artistFocus != ''" >
+    <button class="button" mat-button color="primary" (click)="postLyrics()" (click)="results = true">Generate Lyrics</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Play Sound Button -->
+  <!-- <div>
+    <button class="playbutton" (click)="playSound()"> Play Sound</button>
+  </div> -->
+  <div *ngIf = "loaded == 'done'"><h3>The results for <b>{{artistFocus}}</b> are as follows:</h3></div>
+  <div *ngIf = "lyricError" ><h4>Appologies an Error has occured. Please try again</h4></div>
+  <pre>
+      {{current_data}}
+  </pre>
+  <br>
+  <div *ngIf = "loaded == 'done'" >
+      <button class="button" mat-button color="primary" (click)="current_data = '' " (click)="loaded = ''">Try Again</button>
+  </div>
+  <br>
+  <br>
+  <hr/>
+</div>

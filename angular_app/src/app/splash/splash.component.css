@@ -1,0 +1,87 @@
+.home-img{
+    margin-top: -20px;
+    max-width: 100%;
+    width: 100%;
+    height: 650px;
+    }
+
+    .container-fluid{
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+   .btn{
+      width: 275px;
+      height: 80px;
+      padding: 10px;
+      background-color: #6e288e;
+      border:none;
+      font-family:  Tahoma;
+      color:#d6d2d2;
+      font-size: 28px;
+      text-decoration: none;
+      margin:auto;
+      display:block;
+      background-image: -webkit-linear-gradient(top, #553B9A, #82278E);
+      background-image: -moz-linear-gradient(top, #553B9A, #82278E);
+      background-image: -ms-linear-gradient(top, #553B9A, #82278E);
+      background-image: -o-linear-gradient(top, #553B9A, #82278E);
+      background-image: linear-gradient(to bottom, rgb(108, 80, 185), #82278E);
+
+    }
+    .btn:hover{
+      color:#ffffff;
+    }
+
+body{
+      background-color: coral;
+}
+
+
+#bg {
+  width: auto;
+  width: 30rem;
+
+}
+
+#breath {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#center_pic{
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.right{
+  background-color: white;
+  text-align: right;
+  width: 20%;
+  height: 100px;
+}
+.example-button-row a {
+  margin-right: 8px;
+  text-align: center;
+  height: 100px;
+  width:350px;
+}
+
+.splash-imgs{
+  height: 290px;
+  }
+
+.splash-imgs-small{
+height: 145px;
+width: 145px;
+}

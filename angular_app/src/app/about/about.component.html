@@ -1,0 +1,23 @@
+
+<div class="about"  flex="50" layout="row">
+  <mat-card  flex="50" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Lyric Generator</mat-card-title>
+      <mat-card-subtitle>Made with the following techonolgies</mat-card-subtitle>
+    </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+            <mat-list-item><b>Backend: </b>&nbsp;&nbsp;&nbsp;Python w/flask </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><b>Front: </b>&nbsp;&nbsp;&nbsp;Angular 6 w/Google Material </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><p><b>Text Generation: </b>&nbsp;&nbsp;&nbsp;Python 3 with library, <a href="https://github.com/minimaxir/textgenrnn">textgenrnn by minimaxir</a></p> </mat-list-item>
+          </mat-list>
+      </mat-card-content>
+    <mat-card-actions>
+      <button onClick="window.open('//github.com/benedictmc/CS322-Project')" mat-button>Github</button>
+      <button (click) = "openSnack()" mat-button>Share</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

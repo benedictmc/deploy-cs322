@@ -1,0 +1,10 @@
+div.mdl-layout__drawer > nav.mdl-navigation > a.mdl-navigation__link {
+    display: inline-flex;
+    vertical-align: middle;
+}
+a:hover{
+color:#552a8d;
+border: 0px;
+text-decoration: none;
+background-color:#f5f5f5;
+}

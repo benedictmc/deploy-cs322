@@ -12,11 +12,13 @@ import { SplashComponent } from './splash/splash.component';
 import { AboutComponent } from './about/about.component';
 import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import {NgxAutoScrollModule} from "ngx-auto-scroll";
+import { SamplesComponent } from './samples/samples.component';
 
 const appRoutes: Routes = [
   { path: '', component: SplashComponent },
   { path: 'generate', component: HomeComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'samples', component: SamplesComponent }
   ];
 
 
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     HomeComponent,
     NavComponent,
     SplashComponent,
-    AboutComponent
+    AboutComponent,
+    SamplesComponent
   ],
   imports: [
     BrowserModule,

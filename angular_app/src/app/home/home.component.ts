@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit {
   lyricError: Boolean = false
   loaded: string = '';
   current_data: string;
-  ipUrl = "https://obscure-basin-64790.herokuapp.com/"
+  ipUrl = "http://localhost:5000/"
+  fin_artist: string = ''
   constructor(public http: HttpClient, private scroll: NgxAutoScrollModule) { }
   
   ngOnInit() {
@@ -64,7 +65,7 @@ export class HomeComponent implements OnInit {
           }, 10);
           console.log("Request made");
 
-          
+      this.fin_artist = artist
       },
       error => {
           console.log("Error", error);
@@ -83,11 +84,18 @@ export class HomeComponent implements OnInit {
     const example = source.pipe(takeUntil(timer$));
     const subscribe = example.subscribe(val => {
       this.http.get(url).subscribe(data =>{
-        if(data == 'not_done'){
+        console.log(data)
+        if(data['status'] == 'in progress'){
           console.log("Not done")
         }
+        else if(data['status'] == 'failed'){
+          console.log("Failed")
+          this.loaded = 'done'
+          this.lyricError = true;
+          subscribe.unsubscribe()
+        }
         else{
-          console.log("Done!!")
+          console.log("Done!")
           console.log(data['result'])
           this.loaded = "done"
           this.current_data = data['result']
